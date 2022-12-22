@@ -1,16 +1,11 @@
-#!/usr/bin/env python3
-Square = __import__('1-square').Square
+#!/usr/bin/python3
+"""
+This module defines a suqare based on task 0 (0-square.py)
+"""
 
-my_square = Square(3)
-print(type(my_square))
-print(my_square.__dict__)
 
-try:
-    print(my_square.size)
-except Exception as e:
-    print(e)
-
-try:
-    print(my_square.__size)
-except Exception as e:
-    print(e)
+class Square:
+    """ Square class """
+    def __init__(self, size):
+        """ Class initialization """
+        self.__size = size
